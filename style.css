@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #1a1a1a;
+}
+
+body {
+    margin: 0;
+    overflow: hidden; /* Aplicado para PCs */
+  }
+  
+  .binary-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .binary {
+    position: absolute;
+    color: #0F0; /* Cor verde */
+    font-family: monospace;
+    pointer-events: none;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-10vh) rotateZ(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotateZ(360deg);
+    }
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media screen and (max-width: 768px) {
+    body {
+      overflow: visible; /* Removendo o overflow para dispositivos móveis */
+    }
+  
+    .binary-rain {
+      position: fixed;
+    }
+  }
+
+  a{
+    background-color: #0A9653;
+    padding: 20px 55px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    transition: .5s;
+  }
+
+  a:hover{
+    background-color: #095f35;
+  }
+  
+  header{
+    margin-top: 20px;
+  }
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.log-header{
+    background-color: #095f35;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+main {
+    padding: 20px;
+}
+
+main section {
+    margin: 20px 0;
+    text-align: center;
+    padding: 1rem;
+}
+
+main section h2 {
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os boxes */
+.boxes {
+    display: flex; /* Usa flexbox */
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha se não couberem */
+    justify-content: space-between; /* Espaço igual entre os elementos */
+}
+
+.box1, .box2, .box3 {
+    background-color: #1a1a1a;
+    box-shadow: 1px 3px 10px 2px #0A9653;
+    width: 300px;
+    height: 500px;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+p{
+    text-align: left;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.basico{
+    color: rgb(71, 233, 71)
+}
+
+.premium{
+    color: gold;
+}
+
+.master{
+    color: red;
+}
+
+span{
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+}
+
+section h1{
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .box1, .box2, .box3{
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+
+footer{
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
