@@ -67,6 +67,7 @@ body {
   }
 
 header h1 {
+  margin-top: 20px;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -139,11 +140,44 @@ section h1{
     font-size: 40px;
 }
 
-@media only screen and (max-width: 768px) {
-    .box1, .box2, .box3{
-        margin: auto;
-        margin-bottom: 50px;
-    }
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  body {
+      overflow: auto; /* Permitindo o scroll para dispositivos móveis */
+  }
+
+  .binary-rain {
+      position: fixed;
+  }
+
+  .box1, .box2, .box3 {
+      margin: auto;
+      margin-bottom: 40px;
+      width: calc(100% - 40px); /* Tornar os boxes responsivos */
+      height: auto;
+  }
+
+  /* Estilos para âncoras (links) */
+  a {
+      padding: 15px;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background-color: #0A9653;
+      color: white;
+      text-decoration: none;
+  }
+
+  a:hover {
+      background-color: #095f35;
+  }
+
+  /* Estilos para o título principal (h1) no header */
+  header h1 {
+      font-size: 24px;
+      margin: 10px;
+  }
 }
 
 
