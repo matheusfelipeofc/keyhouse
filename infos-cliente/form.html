@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="binary-rain"></div>
+    <header>
+        <h2>Para prosseguirmos coloque seu nome e seu email</h2>
+    </header>
+    <main>
+        <div class="box">
+            <form id="myForm" action="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848bbab234018be81dc1c71db1" method="post">
+                <div>
+                  <label for="nome">Nome:</label>
+                  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div>
+                  <input type="submit" value="Enviar" style="text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.795);">
+                </div>
+              </form>
+        </div>
+    </main>
+    <script src="../scripts.js"></script>
+    <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Previne o envio do formulário padrão
+
+      // Obtém a URL a ser redirecionada
+      var url = this.getAttribute('action');
+
+      // Abre a URL em uma nova aba (_blank)
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>
