@@ -95,11 +95,17 @@ main section h2 {
     margin-bottom: 10px;
 }
 
+main h1{
+  position: relative;
+  bottom: 20px;
+}
+
 /* Estilos para os boxes */
 .boxes {
     display: flex; /* Usa flexbox */
     flex-wrap: wrap; /* Permite que os elementos quebrem linha se não couberem */
     justify-content: space-between; /* Espaço igual entre os elementos */
+    margin-top: -50px;
 }
 
 .box1, .box2, .box3 {
@@ -108,7 +114,7 @@ main section h2 {
     width: 300px;
     height: 500px;
     padding: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 @keyframes piscar1{
   0% {
