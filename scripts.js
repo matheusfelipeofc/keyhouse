@@ -1,5 +1,5 @@
 function createBinary() {
-  const numBinaries = 3; // Ajuste este número para a quantidade desejada de números por vez
+  const numBinaries = 7; // Ajuste este número para a quantidade desejada de números por vez
 
   for (let i = 0; i < numBinaries; i++) {
     const binary = document.createElement('span');

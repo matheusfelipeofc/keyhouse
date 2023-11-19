@@ -117,6 +117,7 @@ p{
 
 li{
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .basico{
@@ -177,6 +178,10 @@ section h1{
   header h1 {
       font-size: 24px;
       margin: 10px;
+  }
+
+  li{
+    text-align: left;
   }
 }
 
