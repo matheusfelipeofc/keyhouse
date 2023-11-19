@@ -110,6 +110,56 @@ main section h2 {
     padding: 40px;
     margin-bottom: 50px;
 }
+@keyframes piscar1{
+  0% {
+    color: #47e947;
+  }
+  50%{
+    color: white;
+  }
+  100%{
+    color: #47e947
+  }
+}
+
+@keyframes piscar2{
+  0% {
+    color: gold;
+  }
+
+  50%{
+    color: white;
+  }
+  100%{
+    color: gold;
+  }
+}
+
+@keyframes piscar3{
+  0% {
+    color: red;
+  }
+
+  50%{
+    color: white;
+  }
+
+  100%{
+    color: red;
+  }
+}
+
+.price1{
+  animation: piscar1 2s linear infinite;
+}
+
+.price2{
+  animation: piscar2 2s linear infinite;
+}
+
+.price3{
+  animation: piscar3 2s linear infinite;
+}
 
 p{
     text-align: left;
@@ -121,7 +171,7 @@ li{
 }
 
 .basico{
-    color: rgb(71, 233, 71)
+    color: #47e947
 }
 
 .premium{
